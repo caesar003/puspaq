@@ -1,0 +1,52 @@
+.next p {
+  transform-style: preserve-3d;
+  transform: perspective(7cm) rotateX(-15deg) rotateY(15deg);
+  transition: all 1s ease-out;
+}
+.prev p {
+  transform-style: preserve-3d;
+  transform: perspective(7cm) rotateX(-15deg) rotateY(-15deg);
+  transition: all 1s ease-out;
+}
+#queueDisplay{
+  text-align: center;
+  font-size: 11rem;
+/* border: 1px solid grey; */
+}
+.is-hidden {
+  display: none;
+}
+.queue-list-item a{
+  color: #000;
+  text-decoration: none;
+}
+
+.queue-list-item:hover{
+  background-color: navy;
+  color: #fff;
+  cursor: pointer;
+}
+.queue-list-item.finished {
+  background-color: navy;
+  color: #fff;
+}
+.queue-list-item.finished a {
+  color: #fff;
+}
+
+.delete-queue {
+  color: #ccc;
+}
+
+.queueListItem:hover {
+  cursor: pointer;
+  opacity: 0.2;
+}
+.call-q-item:hover, .edit-q-item:hover, .delete-q-item:hover {
+  opacity: 0.2;
+}
+
+.text-info.disabled{
+  pointer-events: none;
+  cursor: default;
+}
